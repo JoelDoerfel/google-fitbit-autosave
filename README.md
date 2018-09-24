@@ -1,8 +1,8 @@
 # google-fitbit-autosave
 
-I fell in love with my Fitbit again after I started collecting granular intraday heartrate data. Now I not only enjoy the device and standard data visualizations from fitbit.com and the fitbit app, but also I get to play around with some pretty detailed data!
+I fell in love with my Fitbit again after I started collecting granular intraday heartrate data. Now I not only enjoy the device and standard data visualizations from fitbit.com and the fitbit app, but also I get to play around with some pretty detailed data! I hope this code makes it easy for all of you to get set up so you can start exploring the playground of granular heartrate data!
 
-The path to full functionality here was a hybrid of (1) Simon Bromberg's code, (2) Jozef Jarosciak's guide (helps avoid an important pitfall in Bromberg's ReadMe file), and (3) a bit of code I wrote myself (autosave functionality).
+The path to full functionality here was a hybrid of (1) Simon Bromberg's code, (2) Jozef Jarosciak's guide (helps avoid an important pitfall in Bromberg's ReadMe file), and (3) a bit of code I wrote myself (AutoSave functionality).
 
 In large part, the following guide is an adaptation of Jozef Jorosciak's excellent tutorial here: https://www.joe0.com/2017/03/18/how-to-sync-fitbit-data-to-google-spreadsheet, although I've found that heartrate.gs works better than intraday.gs.
 
@@ -107,4 +107,4 @@ Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and se
 
 Voila! You're done.
 
-* Philosophical disclaimer: every piece of working code or software, and every app exists to provide humans a functionality that would not exist in that precise form without it. Code creates functions that extend human agency.
+* Philosophical disclaimer: every piece of working code or software and every app exists to create and maintain human functionality that would not exist in that precise form without it. Code creates functions that extend human agency. 
