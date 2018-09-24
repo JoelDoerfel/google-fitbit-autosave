@@ -97,9 +97,9 @@ The process of synchronization will start.
 
 Find a folder in which you'd like to save your daily Fitbit data. 
 
-Go just past line ~400 (in mine, it's line 408) in the Google Script Editor and update the variable:
+Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder":
 
-  var destFolder = DriveApp.getFolderById("{{YOUR_DESTINATION_FOLDER_HERE}}"); 
+  var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}"); 
   
 Hit save. Go back to Google Sheets and hit refresh. 
 
