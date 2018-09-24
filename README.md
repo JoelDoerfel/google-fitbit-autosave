@@ -106,3 +106,5 @@ Hit save. Go back to Google Sheets and hit refresh.
 Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and select the ‘Sync & Save’ option.
 
 Voila! You're done.
+
+* Philosophical disclaimer: every piece of working code or software, and every app exists to provide humans a functionality that would not exist in that precise form without it. Code creates functions that extend human agency.
