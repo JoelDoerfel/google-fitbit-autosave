@@ -4,7 +4,7 @@ I fell in love with my Fitbit again after I started collecting granular intraday
 
 The path to full functionality here was a hybrid of (1) Simon Bromberg's code, (2) Jozef Jarosciak's guide (helps avoid an important pitfall in Bromberg's ReadMe file), and (3) a bit of code I wrote myself (AutoSave functionality).
 
-In large part, the following guide is an adaptation of Jozef Jorosciak's excellent tutorial here: https://www.joe0.com/2017/03/18/how-to-sync-fitbit-data-to-google-spreadsheet, although I've found that heartrate.gs works better than intraday.gs.
+In large part, the following guide is an adaptation of Jozef Jorosciak's excellent tutorial here: https://www.joe0.com/2017/03/18/how-to-sync-fitbit-data-to-google-spreadsheet, although I've found that heartrate.gs works better than intraday.gs. Joe's article has screenshots, so if you get stuck with the setup, it could be a handy reference.
 
 The following article is a step by step guide on how to sync Fitbit intraday heartrate data into a Google spreadsheet. This heartrate data should be granular to around every 6-10 seconds.
 
