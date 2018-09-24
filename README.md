@@ -8,7 +8,7 @@ In large part, the following guide is an adaptation of Jozef Jorosciak's excelle
 
 The following article is a step by step guide on how to sync Fitbit intraday heartrate data into a Google spreadsheet. This heartrate data should be granular to around every 6-10 seconds.
 
-This method of synchronizing Google Spreadsheet with Fitbit data is based on the work of Simon Bromberg. It uses a new Fitbit OAuth2 and Google’s OAuth2 authentication method (tested as of 18.March.2017). You can find more about the sync scripts here: https://github.com/simonbromberg/googlefitbit
+This method of synchronizing Google Spreadsheet with Fitbit data is based on the work of Simon Bromberg. It uses a new Fitbit OAuth2 and Google’s OAuth2 authentication method (tested as of September 24, 2018). You can find more about the sync scripts here: https://github.com/simonbromberg/googlefitbit
 
 Copy Heartrate.gs script
 Visit following URL and put the content of the heartrate.gs script into your clipboard (CTRL: https://github.com/simonbromberg/googlefitbit/blob/master/heartrate.gs (or if you want autosave functionality, instead, copy the heartrate.gs script in this repository: https://github.com/JoelDoerfel/google-fitbit-autosave/blob/mastery/heartrate.gs)
