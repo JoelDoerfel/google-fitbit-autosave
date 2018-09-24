@@ -82,17 +82,20 @@ Then select the range for which to download the data. Just note, that you should
 
 Click ‘Save Setup’ and the panel will disappear.
 
-Authorize Fitbit
+The following commands are available on the "Fitbit" dropdown menu that loads with the Google Sheet as part of the heartrate.gs code. You need to Authorize the spreadsheet with Fitbit (this must be done daily). Then Setup your date ranges. From there you can Sync or "Sync & Save".
+
+"Authorize"
 In your spreadsheet, click ‘Authorize’ from the Fitbit menu and a sidebar will show up on the right.
 
 Click the word ‘Authorize’ in the sidebar.
 
 A page will open up with the Fitbit login page. Log in to the Fitbit account you would like to download data from in the new window, authorize the application by clicking ‘Allow’, and then close the tab when it says “Success you can close this tab”
 
-First Sync
-Inside the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option.
+"Setup"
+From the "Fitbit" drop-down menu, select the date range for which you'd like to sync data. One day at a time works like a charm. Whatever date range you're setup for will apply to "Sync" as well as "Sync & Save".
 
-The process of synchronization will start.
+"Sync"
+Inside the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option. The process of synchronization will start.
 
 "Sync & Save" option:
 
