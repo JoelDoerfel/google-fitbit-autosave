@@ -16,13 +16,13 @@ Steps:
 
 (2) Create a new Google Spreadsheet - As a first step, create a new Google spreadsheet, name it whatever you want and save it. 
 
-(3) Add heartrate.gs script to Google Spreadsheet - Go to ‘Tools’, select ‘Script Editor’ option. Paste the contents of the heartrate.gs file into the script editor, overwriting whatever default function definition is already in there. Then name it and save the document. Now, return to your blank spreadsheet (you can close the script window) and press F5 to refresh the page. It’ll take about 5 seconds after the refresh for the ‘Fitbit’ menu to show up at the top of the Google spreadsheet menu. 
+(3) Add heartrate.gs script to Google Spreadsheet - Go to ‘Tools’, select ‘Script Editor’ option. Paste the contents of the heartrate.gs file into the script editor, overwriting whatever default function definition is already in there. Then name it and save the document. Now, return to your blank spreadsheet and press F5 to refresh the page. It’ll take about 5 seconds after the refresh for the ‘Fitbit’ menu to show up at the top of the Google spreadsheet menu. 
 
 (4) Install OAuth2 library for Google Apps Script - Now go to ‘Tools,’ select ‘Script Editor’ again. We’ll need to add the Oauth2 Google Script library to our spreadsheet. To do so, click Resources in the top menu, then select Libraries. Then add the OAuth2.0 library by typing in the project key “MswhXl8fVhTFUH_Q3UOJbXvxhMjh3Sh48” and hitting the Add button. Once done, select the newest version and development mode and press save. 
 
-(5) Get the ‘Script ID’ - The past procedures required users to get a project’s key by clicking on the ‘Fitbit’ menu inside the spreadsheet and clicking ‘Setup.’ However, the new process no longer uses the Project Key, which is deprecated now. Instead, we’ll need to get a ‘Script ID’. To find it, go to ‘Tools/Script Editor’ again and then select ‘File/Project Properties’. Copy the text adjacent to ‘Script ID’ in the popup. We will need that in subsequent steps.
+(5) Get the ‘Script ID’ - The past procedures required users to get a project’s key by clicking on the ‘Fitbit’ menu inside the spreadsheet and clicking ‘Setup.’ However, the new process no longer uses the Project Key, which is deprecated. Instead, we’ll need to get a ‘Script ID’. To find it, go to ‘Tools/Script Editor’ again and then select ‘File/Project Properties’. Copy the text adjacent to ‘Script ID’ in the popup. We will need that in subsequent steps.
 
-(6) Authorize Fitbit Sync - Close the Script Editor and go back to your blank Google spreadsheet and select the FitBit menu and click on ‘Setup’. A popup window will ask for Authorization. Click on ‘Continue’ button and follow Google singing process under which you want to authorize the Fitbit syncing application on. Then it will show you the permissions the application is requesting, click ‘Allow’. Then the ‘Setup Fitbit Download’ panel should appear. Just close it for now.
+(6) Authorize Fitbit Sync - From the Script Editor, go back to your blank Google spreadsheet and select the FitBit menu and click on ‘Setup’. A popup window will ask for Authorization. Click on ‘Continue’ button and follow Google sign-in process for the account on which you'd like to authorize the Fitbit syncing application. Then it will show you the permissions the application is requesting, click ‘Allow’. Then the ‘Setup Fitbit Download’ panel should appear. Just close it for now.
 
 (7) Setup a new Fitbit app at Dev.Fitbit.com - Now, go to https://dev.fitbit.com/ and either register a new account or login to your existing account. Click on ‘Manage My Apps’ in the top menu and click on the ‘Register a New App’ option. The next step is to fill up the application. You can use whatever data you wish. These are the important parts:
 * For the OAuth 2.0 application type option, select: ‘Personal’ option.
@@ -33,7 +33,7 @@ Steps:
 (8) Setup a Fitbit sync - Go back to your blank Google Spreadsheet and select ‘Setup’ from the ‘Fitbit’ menu. Copy in the ‘OAuth 2.0 Client ID’ and the ‘Client Secret’ from the previous step. Select all the activities that you’d like to sync to your spreadsheet. You can select all of them or individual ones. Then select the range for which to download the data. Just note, that you shouldn’t try to download more than a couple months worth of data, Fitbit’s API will not like you. Click ‘Save Setup’ and the panel will disappear.
 ____
 
-The following commands are available on the "Fitbit" dropdown menu that loads with the Google Sheet as part of the heartrate.gs code. You need to "Authorize" the spreadsheet with Fitbit (this must be done once daily). Then "Setup" your date ranges. From there you can "Sync" or "Sync & Save".
+The following commands are available on the "Fitbit" dropdown menu that loads with the Google Sheet as part of the heartrate.gs code. For daily use, the flow is as follows: You need to "Authorize" the spreadsheet with Fitbit (this must be done once daily). Then "Setup" your date ranges. From there you can "Sync" or "Sync & Save".
 
 - "Authorize" - In your spreadsheet, click ‘Authorize’ from the Fitbit menu and a sidebar will show up on the right. Click the word ‘Authorize’ in the sidebar. A page will open up with the Fitbit login page. Log in to the Fitbit account you would like to download data from in the new window, authorize the application by clicking ‘Allow’, and then close the tab when it says “Success you can close this tab”
 
@@ -47,7 +47,7 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}");
 
-Hit save. Go back to Google Sheets and hit refresh. Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and select the ‘Sync & Save’ option.
+Hit save in Script Editor. Go back to your open Google Spreadsheet and hit refresh. Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and select the ‘Sync & Save’ option.
 
 Voila! You're done.
 ____
