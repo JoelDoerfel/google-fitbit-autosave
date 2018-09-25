@@ -32,7 +32,7 @@ Steps:
 
 (8) Setup a Fitbit sync - Go back to your blank Google Spreadsheet and select ‘Setup’ from the ‘Fitbit’ menu. Copy in the ‘OAuth 2.0 Client ID’ and the ‘Client Secret’ from the previous step. Select all the activities that you’d like to sync to your spreadsheet. You can select all of them or individual ones. Then select the range for which to download the data. Just note, that you shouldn’t try to download more than a couple months worth of data, Fitbit’s API will not like you. Click ‘Save Setup’ and the panel will disappear.
 
-(9) Setup a Destination Folder for your daily Fitbit data - In Google Drive, find or create a folder in which you'd like to save your daily Fitbit data. In the URL of the folder, there will a Folder ID. Highlight the Folder ID in the URL and copy it using Ctrl+C. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder" by replacing {YOUR_DESTINATION_FOLDER} with your Folder ID from the clipboard: 
+(9) Setup a Destination Folder for your daily Fitbit data - In Google Drive, find or create a folder in which you'd like to save your daily Fitbit data. In the URL of the folder, there will a Folder ID (currently, this will be something like: https://drive.google.com/drive/folders/{YOUR_DESTINATION_FOLDER}). Highlight the Folder ID in the URL and copy it using Ctrl+C. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder" by replacing {YOUR_DESTINATION_FOLDER} with your Folder ID from the clipboard: 
 
 var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}");
 
