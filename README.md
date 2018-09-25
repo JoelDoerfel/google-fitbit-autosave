@@ -51,7 +51,7 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 - "Sync & Save" - Click on the Fitbit menu and select the ‘Sync & Save’ option. This will sync your daily HR data and save it to your destination folder of choice.
 
-Voila! You're done.
+Voilà! You're done.
 ____
 
 * Philosophical disclaimer: every piece of working code or software and every app exists to create and maintain human functionality that would not exist in that precise form without it. Code creates functions that extend human agency. 
