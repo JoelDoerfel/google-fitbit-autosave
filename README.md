@@ -43,7 +43,7 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 - "Authorize" - In your spreadsheet, click ‘Authorize’ from the Fitbit menu and a sidebar will show up on the right. Click the word ‘Authorize’ in the sidebar. A page will open up with the Fitbit login page. Log in to the Fitbit account you would like to download data from in the new window, authorize the application by clicking ‘Allow’, and then close the tab when it says “Success you can close this tab”
 
-- "Setup" - From the "Fitbit" drop-down menu, select the date range for which you'd like to sync data. One day at a time works like a charm. Whatever date range you're setup for will apply to "Sync" as well as "Sync & Save".
+- "Setup" - From the "Fitbit" drop-down menu, select the date range for which you'd like to sync data. One day at a time works like a charm. Whatever date range you set up will apply to "Sync" as well as "Sync & Save".
 
 - "Reset" - Resets the script's authorization with Fitbit. If you find yourself needing this option, you'll also need to reauthorize the script.
 
