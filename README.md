@@ -43,8 +43,10 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 - "Sync" - Inside the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option. The process of synchronization will start.
 
-- "Sync & Save" - Find a folder in which you'd like to save your daily Fitbit data. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder":
-   // var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}"); 
+- "Sync & Save" - Find a folder in which you'd like to save your daily Fitbit data. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder": 
+
+var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}");
+
 Hit save. Go back to Google Sheets and hit refresh. Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and select the ‘Sync & Save’ option.
 
 Voila! You're done.
