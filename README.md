@@ -31,6 +31,12 @@ Steps:
 * Once done, just press the ‘Save’ button. On the next page, Fitbit will ask you to Agree to the terms, and Register. Do so, and you will be redirected to a page that contains your credentials. Make a note of your ‘OAuth 2.0 Client ID’ and your ‘Client Secret’ keys. 
 
 (8) Setup a Fitbit sync - Go back to your blank Google Spreadsheet and select ‘Setup’ from the ‘Fitbit’ menu. Copy in the ‘OAuth 2.0 Client ID’ and the ‘Client Secret’ from the previous step. Select all the activities that you’d like to sync to your spreadsheet. You can select all of them or individual ones. Then select the range for which to download the data. Just note, that you shouldn’t try to download more than a couple months worth of data, Fitbit’s API will not like you. Click ‘Save Setup’ and the panel will disappear.
+
+(9) Setup a Destination Folder for your daily Fitbit data - In Google Drive, find or create a folder in which you'd like to save your daily Fitbit data. In the URL of the folder, there will a Folder ID. Highlight the Folder ID in the URL and copy it using Ctrl+C. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder" by replacing {YOUR_DESTINATION_FOLDER} with your Folder ID from the clipboard: 
+
+var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}");
+
+Hit save in Script Editor. Go back to your open Google Spreadsheet and hit refresh. Inside the Google Spreadsheet, once it reloads, on the Fitbit menu you're new ready to use the ‘Sync & Save’ option.
 ____
 
 The following commands are available on the "Fitbit" dropdown menu that loads with the Google Sheet as part of the heartrate.gs code. For daily use, the flow is as follows: You need to "Authorize" the spreadsheet with Fitbit (this must be done once daily). Then "Setup" your date ranges. From there you can "Sync" or "Sync & Save".
@@ -41,13 +47,9 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 - "Reset" - Resets the script's authorization with Fitbit. If you find yourself needing this option, you'll also need to reauthorize the script.
 
-- "Sync" - Inside the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option. The process of synchronization will start.
+- "Sync" - In the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option. The process of synchronization will start.
 
-- "Sync & Save" - Find a folder in which you'd like to save your daily Fitbit data. Go to the Google Script Editor toward the very end of the code (in mine, it's line 379) and update the variable "destFolder": 
-
-var destFolder = DriveApp.getFolderById("{YOUR_DESTINATION_FOLDER}");
-
-Hit save in Script Editor. Go back to your open Google Spreadsheet and hit refresh. Inside the Google Spreadsheet, once it reloads,  click on the Fitbit menu and select the ‘Sync & Save’ option.
+- "Sync & Save" - Click on the Fitbit menu and select the ‘Sync & Save’ option. This will sync your daily HR data and save it to your destination folder of choice.
 
 Voila! You're done.
 ____
