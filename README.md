@@ -49,7 +49,7 @@ The following commands are available on the "Fitbit" dropdown menu that loads wi
 
 - "Sync" - In the Google Spreadsheet, click on the Fitbit menu and select the ‘Sync’ option. The process of synchronization will start.
 
-- "Sync & Save" - Click on the Fitbit menu and select the ‘Sync & Save’ option. This will sync your daily HR data and save it to your destination folder of choice.
+- "Sync & Save" - Click on the Fitbit menu and select the ‘Sync & Save’ option. This will sync your daily HR data and save a date-stamped copy of it to your destination folder of choice.
 
 Voilà! You're done.
 ____
