@@ -1,6 +1,6 @@
 # google-fitbit-autosave
 
-I fell in love with my Fitbit again after I started collecting granular intraday heartrate data. Now I not only enjoy the device and standard data visualizations from fitbit.com and the fitbit app, but also I get to play around with some pretty detailed data! I hope this code and setup guide makes it easy for all of you to get set up so you can start exploring the playground of granular heartrate data!
+I fell in love with my Fitbit again after I started collecting granular intraday heartrate data. Now I not only enjoy the device and standard data visualizations from Fitbit.com and the Fitbit app, but also I get to play around with some pretty detailed data! I hope this code and setup guide makes it easy for all of you to get set up so you can start exploring the playground of granular heartrate data!
 
 The path to full functionality here was a hybrid of (1) Simon Bromberg's code, (2) Jozef Jarosciak's guide (helps avoid an important pitfall in Bromberg's guide), and (3) a bit of code I wrote myself (AutoSave functionality).
 
