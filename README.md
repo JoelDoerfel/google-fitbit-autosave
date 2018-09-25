@@ -24,7 +24,7 @@ Steps:
 
 (6) Authorize Fitbit Sync - From the Script Editor, go back to your blank Google spreadsheet and select the FitBit menu and click on ‘Setup’. A popup window will ask for Authorization. Click on ‘Continue’ button and follow Google sign-in process for the account on which you'd like to authorize the Fitbit syncing application. Then it will show you the permissions the application is requesting, click ‘Allow’. Then the ‘Setup Fitbit Download’ panel should appear. Just close it for now.
 
-(7) Setup a new Fitbit app at Dev.Fitbit.com - Now, go to https://dev.fitbit.com/ and either register a new account or login to your existing account. Click on ‘Manage My Apps’ in the top menu and click on the ‘Register a New App’ option. The next step is to fill up the application. You can use whatever data you wish. These are the important parts:
+(7) Setup a new Fitbit app at Dev.Fitbit.com - Now, go to https://dev.fitbit.com/apps/new and either register a new account or login to your existing account. Click on ‘Manage My Apps’ in the top menu and click on the ‘Register a New App’ option. The next step is to fill up the application. You can use whatever data you wish. These are the important parts:
 * For the OAuth 2.0 application type option, select: ‘Personal’ option.
 * Default access type should be set to: ‘Read-Only’.
 * The other important piece of data on the form is the Callback URL. Type in the following url: https://script.google.com/macros/d/YOUR_SCRIPT_ID/usercallback. Then replace YOUR_SCRIPT_ID in the URL with the Script ID we have gathered in the previous step.
